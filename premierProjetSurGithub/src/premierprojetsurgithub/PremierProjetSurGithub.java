@@ -4,6 +4,8 @@
  */
 package premierprojetsurgithub;
 
+import java.util.Scanner;
+
 /**
  *
  * @author manoa
@@ -15,6 +17,13 @@ public class PremierProjetSurGithub {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        String prenom;
+        Scanner sc;
+        sc = new Scanner(System.in);
+        System.out.println("Bonjour, quel est votre prenom ?");
+        prenom = sc.nextLine();
+        System.out.println("Au revoir");
     }
     
 }
+
