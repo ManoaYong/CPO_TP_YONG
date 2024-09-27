@@ -22,7 +22,7 @@ public class TP1_guessMyNumber_YONG {
     Scanner sc = new Scanner(System.in);
     System.out.println("Choisissez une difficulte: Facile Moyen Difficile");
     String rep = sc.nextLine();
-    if (rep == "Facile"){
+    if ("Facile".equals(rep)){
     int n = generateurAleat.nextInt(100); 
     System.out.println("Veuiller saisir un nombre entre 0 et 100: "); 
     int ent = sc.nextInt();
@@ -46,9 +46,9 @@ public class TP1_guessMyNumber_YONG {
     }
     System.out.println("Vous avez gagne !!! En: " + cpt + " tentatives.");
     }
-    if (rep == "Moyen"){
+    if ("Moyen".equals(rep)){
     int n = generateurAleat.nextInt(1000);  
-    System.out.println("Veuiller saisir un nombre entre 0 et 100: "); 
+    System.out.println("Veuiller saisir un nombre entre 0 et 1 000: "); 
     int ent = sc.nextInt();
     int cpt = 1;
     if (ent < n){
@@ -70,9 +70,9 @@ public class TP1_guessMyNumber_YONG {
     }
     System.out.println("Vous avez gagne !!! En: " + cpt + " tentatives.");
     }
-    if (rep == "Difficile"){
+    if ("Difficile".equals(rep)){
     int n = generateurAleat.nextInt(10000);
-    System.out.println("Veuiller saisir un nombre entre 0 et 100: "); 
+    System.out.println("Veuiller saisir un nombre entre 0 et 10 000: "); 
     int ent = sc.nextInt();
     int cpt = 1;
     if (ent < n){
