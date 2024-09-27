@@ -5,6 +5,7 @@
 package tp1_guessmynumber_yong;
 
 import java.util.Random;
+import java.util.Scanner;
 
 /**
  *
@@ -18,6 +19,81 @@ public class TP1_guessMyNumber_YONG {
     public static void main(String[] args) {
         // TODO code application logic here
     Random generateurAleat = new Random();
+    Scanner sc = new Scanner(System.in);
+    System.out.println("Choisissez une difficulte: Facile Moyen Difficile");
+    String rep = sc.nextLine();
+    if (rep == "Facile"){
+    int n = generateurAleat.nextInt(100); 
+    System.out.println("Veuiller saisir un nombre entre 0 et 100: "); 
+    int ent = sc.nextInt();
+    int cpt = 1;
+    if (ent < n){
+        System.out.println("Trop petit");
+    }
+    if (ent > n){
+        System.out.println("Trop grand");
+    }
+     
+    while (ent != n){   
+    ent = sc.nextInt();
+    cpt += 1;
+    if (ent < n){
+        System.out.println("Trop petit");
+    }
+    if (ent > n){
+        System.out.println("Trop grand");
+    }
+    }
+    System.out.println("Vous avez gagne !!! En: " + cpt + " tentatives.");
+    }
+    if (rep == "Moyen"){
+    int n = generateurAleat.nextInt(1000);  
+    System.out.println("Veuiller saisir un nombre entre 0 et 100: "); 
+    int ent = sc.nextInt();
+    int cpt = 1;
+    if (ent < n){
+        System.out.println("Trop petit");
+    }
+    if (ent > n){
+        System.out.println("Trop grand");
+    }
+     
+    while (ent != n){   
+    ent = sc.nextInt();
+    cpt += 1;
+    if (ent < n){
+        System.out.println("Trop petit");
+    }
+    if (ent > n){
+        System.out.println("Trop grand");
+    }
+    }
+    System.out.println("Vous avez gagne !!! En: " + cpt + " tentatives.");
+    }
+    if (rep == "Difficile"){
+    int n = generateurAleat.nextInt(10000);
+    System.out.println("Veuiller saisir un nombre entre 0 et 100: "); 
+    int ent = sc.nextInt();
+    int cpt = 1;
+    if (ent < n){
+        System.out.println("Trop petit");
+    }
+    if (ent > n){
+        System.out.println("Trop grand");
+    }
+     
+    while (ent != n){   
+    ent = sc.nextInt();
+    cpt += 1;
+    if (ent < n){
+        System.out.println("Trop petit");
+    }
+    if (ent > n){
+        System.out.println("Trop grand");
+    }
+    }
+    System.out.println("Vous avez gagne !!! En: " + cpt + " tentatives.");
+    }
+    }
     }
     
-}
