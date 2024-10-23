@@ -33,7 +33,7 @@ public class TP2_manip_Yong {
         Moussaka[] tableau ;
         tableau = new Moussaka[10] ;
         for (int i =0 ; i < tableau.length ; i++){
-            Moussaka tableau[i] = new Moussaka(10000) ;
+            tableau[i] = new Moussaka(10000) ;
         }
     }
     
