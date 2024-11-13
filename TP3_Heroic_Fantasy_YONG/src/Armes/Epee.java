@@ -2,18 +2,22 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package tp3_heroic_fantasy_yong;
+package Armes;
+
+import Armes.Arme;
 
 /**
  *
  * @author manoa
  */
-public class Baton extends Arme{
+public class Epee extends Arme{
     
-    int age ;
-    public Baton(String nom, int niv_att, int age) {
+    int indice ;
+            
+    public Epee(String nom, int niv_att, int indice) {
         super(nom, niv_att);
-        this.age = age ;
+       
+        this.indice = indice ;
     }
     
 }
